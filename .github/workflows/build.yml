@@ -18,7 +18,7 @@ jobs:
           python-version: 3.12
       - run: |
           python -m pip install --upgrade pip
-          pip install edk2-pytool-library==0.22.3
+          pip install edk2-pytool-library==0.23.0
           pip install edk2-pytool-extensions==0.28.0
           cd secureboot
           python secure_boot_default_keys.py --keystore keystore.toml -o Artifacts
